@@ -6,144 +6,190 @@
   <title>Privacy Policy – SnapReceipt AI</title>
 
   <style>
-    body {
-      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Arial, sans-serif;
-      background: #f4f6f8;
+    :root {
+      --primary: #16a34a;
+      --bg: #f8fafc;
+      --card: #ffffff;
+      --text: #1f2937;
+      --muted: #6b7280;
+      --border: #e5e7eb;
+    }
+
+    * {
       margin: 0;
       padding: 0;
-      color: #222;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Arial, sans-serif;
+      background: var(--bg);
+      color: var(--text);
       line-height: 1.7;
     }
+
     .container {
-      max-width: 900px;
+      max-width: 820px;
       margin: 40px auto;
-      background: #ffffff;
-      padding: 40px;
-      border-radius: 12px;
-      box-shadow: 0 6px 20px rgba(0,0,0,0.06);
+      padding: 20px;
     }
+
+    .card {
+      background: var(--card);
+      padding: 35px;
+      border-radius: 16px;
+      border: 1px solid var(--border);
+    }
+
     h1 {
-      color: #0f172a;
-      margin-bottom: 10px;
+      font-size: 28px;
+      margin-bottom: 6px;
+      font-weight: 700;
     }
+
+    .subtitle {
+      color: var(--muted);
+      margin-bottom: 25px;
+      font-size: 14px;
+    }
+
     h2 {
       margin-top: 30px;
-      color: #16a34a;
-      border-bottom: 2px solid #e5f7ec;
-      padding-bottom: 5px;
+      font-size: 18px;
+      font-weight: 600;
+      color: var(--primary);
+      padding-bottom: 6px;
+      border-bottom: 1px solid var(--border);
     }
-    p, li {
-      font-size: 16px;
+
+    p {
+      margin-top: 12px;
+      font-size: 15px;
     }
+
     ul {
-      margin-left: 20px;
+      margin-top: 12px;
+      padding-left: 20px;
     }
+
+    li {
+      margin-bottom: 8px;
+      font-size: 15px;
+    }
+
     a {
-      color: #16a34a;
+      color: var(--primary);
       text-decoration: none;
+      font-weight: 500;
     }
+
     a:hover {
       text-decoration: underline;
     }
-    .date {
-      color: #666;
-      margin-bottom: 20px;
-    }
+
     footer {
-      margin-top: 40px;
+      margin-top: 30px;
       text-align: center;
-      color: #777;
-      font-size: 14px;
+      font-size: 13px;
+      color: var(--muted);
+    }
+
+    /* Mobile optimization */
+    @media (max-width: 600px) {
+      .card {
+        padding: 20px;
+      }
+
+      h1 {
+        font-size: 22px;
+      }
     }
   </style>
 </head>
 
 <body>
+
   <div class="container">
+    <div class="card">
 
-    <h1>SnapReceipt AI: Expense Scan</h1>
-    <p class="date"><strong>Privacy Policy</strong><br>
-    Effective Date: January 1, 2026</p>
+      <h1>SnapReceipt AI: Expense Scan</h1>
+      <div class="subtitle">
+        <strong>Privacy Policy</strong><br>
+        Effective Date: January 1, 2026
+      </div>
 
-    <p>
-      SnapReceipt AI (“we”, “our”, “us”) respects your privacy. This Privacy Policy explains how we handle information when you use our mobile application.
-    </p>
+      <p>
+        SnapReceipt AI (“we”, “our”, “us”) respects your privacy. This Privacy Policy explains how we handle information when you use our mobile application.
+      </p>
 
-    <h2>1. Information We Collect</h2>
+      <h2>1. Information We Collect</h2>
+      <ul>
+        <li><strong>No Account Required:</strong> We do not require users to provide personal details.</li>
+        <li><strong>Camera & Photos:</strong> Used to scan receipts. Images are processed on-device and not stored.</li>
+        <li><strong>Receipt Data:</strong> Extracted data (merchant, date, amount) is stored locally on your device.</li>
+        <li><strong>Internet Access:</strong> Used for optional features and app improvements.</li>
+        <li><strong>Advertising Data:</strong> Google AdMob may collect device and ad interaction data.</li>
+        <li><strong>Analytics:</strong> Anonymous usage and crash data may be collected.</li>
+      </ul>
 
-    <ul>
-      <li><strong>No Account Required:</strong> We do not require users to create an account or provide personal details such as name, email, or phone number.</li>
+      <h2>2. How We Use Information</h2>
+      <p>
+        Data is used to provide receipt scanning, expense tracking, app improvements, and advertising. We do not sell personal data.
+      </p>
 
-      <li><strong>Camera & Photos:</strong> Used to scan receipts and import images. Images are processed on your device and are not stored or uploaded by us.</li>
+      <h2>3. Data Storage</h2>
+      <p>
+        All data is stored locally on your device. You can remove all data by uninstalling the app.
+      </p>
 
-      <li><strong>Receipt Data:</strong> The app extracts information such as merchant name, date, and total amount. This data is stored locally on your device.</li>
+      <h2>4. Advertising & Analytics</h2>
+      <ul>
+        <li><a href="https://policies.google.com/privacy" target="_blank">Google Privacy Policy</a></li>
+        <li><a href="https://policies.google.com/technologies/partner-sites" target="_blank">Google Partner Sites</a></li>
+      </ul>
 
-      <li><strong>Internet Access:</strong> Used for optional features such as syncing and improving app performance. No personal identity is attached.</li>
+      <h2>5. Subscriptions & Payments</h2>
+      <p>
+        Payments are securely handled by Apple. We do not access or store payment details.
+      </p>
+      <p>
+        <a href="https://www.apple.com/legal/privacy/" target="_blank">Apple Privacy Policy</a>
+      </p>
 
-      <li><strong>Advertising Data:</strong> We use Google AdMob which may collect Advertising ID, IP address, device info, and ad interactions.</li>
+      <h2>6. Your Choices</h2>
+      <ul>
+        <li>Disable camera or photo access</li>
+        <li>Manage subscriptions via Apple ID</li>
+        <li>Reset advertising ID</li>
+        <li>Delete app data anytime</li>
+      </ul>
 
-      <li><strong>Analytics & Diagnostics:</strong> Anonymous data such as app version, device type, and crash logs may be collected.</li>
-    </ul>
+      <h2>7. Children's Privacy</h2>
+      <p>
+        This app is not intended for children under 13.
+      </p>
 
-    <h2>2. How We Use Information</h2>
-    <p>
-      We use data to provide receipt scanning, expense tracking, app improvements, and advertising. We do not sell personal data.
-    </p>
+      <h2>8. Security</h2>
+      <p>
+        We take reasonable measures to protect your data.
+      </p>
 
-    <h2>3. Data Storage</h2>
-    <p>
-      All data is stored locally on your device. You can delete your data anytime by removing the app.
-    </p>
+      <h2>9. Policy Updates</h2>
+      <p>
+        This policy may be updated periodically.
+      </p>
 
-    <h2>4. Advertising & Analytics</h2>
-    <p>
-      We use Google AdMob and may use analytics services to improve performance.
-    </p>
-    <ul>
-      <li><a href="https://policies.google.com/privacy" target="_blank">Google Privacy Policy</a></li>
-      <li><a href="https://policies.google.com/technologies/partner-sites" target="_blank">Google Partner Sites</a></li>
-    </ul>
+      <h2>10. Contact</h2>
+      <p>
+        skyloopapps@gmail.com
+      </p>
 
-    <h2>5. Subscriptions & Payments</h2>
-    <p>
-      All payments are securely handled by Apple via the App Store. We do not collect or store payment details.
-    </p>
-    <p>
-      Learn more: <a href="https://www.apple.com/legal/privacy/" target="_blank">Apple Privacy Policy</a>
-    </p>
+      <footer>
+        © 2026 SnapReceipt AI. All rights reserved.
+      </footer>
 
-    <h2>6. Your Choices</h2>
-    <ul>
-      <li>Disable camera or photo access in device settings</li>
-      <li>Manage subscriptions via Apple ID</li>
-      <li>Reset advertising ID</li>
-      <li>Delete app to remove all stored data</li>
-    </ul>
-
-    <h2>7. Children's Privacy</h2>
-    <p>
-      This app is not intended for children under 13. We do not knowingly collect personal data from children.
-    </p>
-
-    <h2>8. Security</h2>
-    <p>
-      We take reasonable measures to protect your data, but no system is completely secure.
-    </p>
-
-    <h2>9. Policy Updates</h2>
-    <p>
-      We may update this Privacy Policy. Changes will be reflected by the updated date above.
-    </p>
-
-    <h2>10. Contact</h2>
-    <p>
-      Email: skyloopapps@gmail.com
-    </p>
-
-    <footer>
-      <p>© 2026 SnapReceipt AI. All rights reserved.</p>
-    </footer>
-
+    </div>
   </div>
+
 </body>
 </html>
